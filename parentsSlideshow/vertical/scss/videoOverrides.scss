@@ -2,7 +2,7 @@
 @import "partials/colors";
 @import "partials/mixins";
 
-body.shell.parents #ramp-ovp-widget {
+body.shell.parents  {
   position: relative;
   width: 100vw;
   height: 56.25vw;
@@ -10,8 +10,10 @@ body.shell.parents #ramp-ovp-widget {
     @include spinner();
     z-index: 1;
   }
-  iframe {
-    position: relative;
-    z-index: 2;
+  #ramp-ovp-widget {
+    iframe {
+      position: relative;
+      z-index: 2;
+    }
   }
 }
