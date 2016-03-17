@@ -1,221 +1,943 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Mobile slideshow with page effect</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile slideshow with page effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    
-    
-    
-  </head>
+<body>
+<header class="headerWrapper">
+  <a href="#" id="expandMainNav" class="expandMainNav">Menu</a>
+  <a href="/" class="parentsLogo">Parents.com</a>
+  <a href="#" class="expandSearch">Search</a>
+</header>
+<div class="container">
+  <div class="slideContainer" id="slideContainer">
+    <div data-slide-number="1" class="slide slide--first">
 
-  <body>
+      <div class="slideTop">
+        <h1>13 Signs You May Be Pregnant</h1>
+        <p>What are the earliest signs of pregnancy? Although many of these
+          factors
+          occur at the end of your cycle, they're also pregnancy symptoms.
+          Feeling
+          crampy or exhausted? These and other pregnancy signs could mean you're
+          pregnant -- even before your missed period!</p>
+      </div>
 
-    <div class="slideContainer" id="slideContainer">
-      <div div data-slide-number="1" class="slide">
-  <div class="slideOfTotal slideOfTotal--outside largeUp">
-    <span class="page">1</span>
-    <span class="total">of 19</span>
-  </div>
-  <div class="slideImage">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">1</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
         <div class="slideImageInnerWrapper">
-          <img class="lazySlideImage lazy" data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/550_102022939_w.jpg" />
-                  <span class="imageForEverythingInThisSlideshow" style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/550_102022939_w.jpg')"></span>
+          <img class="lazySlideImage lazy"
+               data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/550_102022939_w.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/550_102022939_w.jpg')"></span>
             <span class="slideOfTotal">
         <span class="page">1</span> <span class="total">of 19</span>
       </span>
-      <div class="gigyaShareDirectApi">
-        <span class="facebookSs"><a href="#" class="facebookShare">Facebook</a></span>
-        <a href="#" class="pinterestShare"
-        data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D1&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2F550_102022939_w.jpg&amp;description=%3Cp%3EWondering+if+you%27ve+got+a+baby+on+board%3F+Pay+close+attention+to+your+body%21+And+if+you+spot+a+few+of+the+following+symptoms+--+and+your+period+is+MIA+--+it+may+be+time+to+head+to+the+drugstore+or+schedule+an+appointment+with+your+ob-gyn.+%0A%0A%0A%22The+hormones+released+as+soon+as+you+conceive+may+start+causing+subtle+changes+even+before+they%27re+detectable+on+a+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Ftest%2Fhome-pregnancy-tests%2F%22+%3Ehome+pregnancy+test%3C%2Fa%3E%2C%22+says+Melissa+Goist%2C+MD%2C+clinical+assistant+professor+of+obstetrics+and+gynecology+at+the+Ohio+State+University+Medical+Center.+Unfortunately+many%2C+like+sore+breasts+or+bloating%2C+also+happen+right+before+your+period+%28a+sure+sign+that+you%27re+not+pregnant%29%2C+so+it%27s+all+a+guessing+game+until+you+take+a+test.%3C%2Fp%3E">Pinterest</a>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D1&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2F550_102022939_w.jpg&amp;description=%3Cp%3EWondering+if+you%27ve+got+a+baby+on+board%3F+Pay+close+attention+to+your+body%21+And+if+you+spot+a+few+of+the+following+symptoms+--+and+your+period+is+MIA+--+it+may+be+time+to+head+to+the+drugstore+or+schedule+an+appointment+with+your+ob-gyn.+%0A%0A%0A%22The+hormones+released+as+soon+as+you+conceive+may+start+causing+subtle+changes+even+before+they%27re+detectable+on+a+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Ftest%2Fhome-pregnancy-tests%2F%22+%3Ehome+pregnancy+test%3C%2Fa%3E%2C%22+says+Melissa+Goist%2C+MD%2C+clinical+assistant+professor+of+obstetrics+and+gynecology+at+the+Ohio+State+University+Medical+Center.+Unfortunately+many%2C+like+sore+breasts+or+bloating%2C+also+happen+right+before+your+period+%28a+sure+sign+that+you%27re+not+pregnant%29%2C+so+it%27s+all+a+guessing+game+until+you+take+a+test.%3C%2Fp%3E">Pinterest</a>
+          </div>
+        </div>
+        <p class="nodeImage__photoCredit">Thayer Allyson Gowdy
+        </p>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          <p>Am I pregnant?</p>
+        </h3>
+        <div class="slideDescription">
+          <p>
+          <p>Wondering if you've got a baby on board? Pay close attention to
+            your
+            body! And if you spot a few of the following symptoms -- and your
+            period is MIA -- it may be time to head to the drugstore or schedule
+            an appointment with your ob-gyn.
+
+
+            "The hormones released as soon as you conceive may start causing
+            subtle changes even before they're detectable on a <a
+              href="http://www.parents.com/pregnancy/signs/test/home-pregnancy-tests/">home
+              pregnancy test</a>," says Melissa Goist, MD, clinical assistant
+            professor of obstetrics and gynecology at the Ohio State University
+            Medical Center. Unfortunately many, like sore breasts or bloating,
+            also happen right before your period (a sure sign that you're not
+            pregnant), so it's all a guessing game until you take a test.
+          </p></p>
+        </div>
+        <ul class="slideLinks">
+          <li><a href="/pregnancy/am-i-pregnant/">Quiz: Are You Pregnant?!</a>
+          </li>
+        </ul>
+        <div class="mobileAd thirdParty ad">
+          <div id="div-gpt-mob-square-flex-1" data-tier="1"></div>
+        </div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
       </div>
     </div>
-          <p class="nodeImage__photoCredit">Thayer Allyson Gowdy
-</p>
+    <div data-slide-number="2" class="slide slide--second">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">2</span>
+        <span class="total">of 19</span>
       </div>
-  <div class="restOfTheSlide">
-    <h3 class="slideTitle" data-slide-number="1">
-      <p>Am I pregnant?</p>
-    </h3>
-          <div class="slideDescription">
-        <p><p>Wondering if you've got a baby on board? Pay close attention to your body! And if you spot a few of the following symptoms -- and your period is MIA -- it may be time to head to the drugstore or schedule an appointment with your ob-gyn. 
-
-
-"The hormones released as soon as you conceive may start causing subtle changes even before they're detectable on a <a href="http://www.parents.com/pregnancy/signs/test/home-pregnancy-tests/" >home pregnancy test</a>," says Melissa Goist, MD, clinical assistant professor of obstetrics and gynecology at the Ohio State University Medical Center. Unfortunately many, like sore breasts or bloating, also happen right before your period (a sure sign that you're not pregnant), so it's all a guessing game until you take a test.</p></p>
-      </div>
-              <ul class="slideLinks">
-                  <li><a href="/pregnancy/am-i-pregnant/">Quiz: Are You Pregnant?!</a></li>
-              </ul>
-              <div class="mobileAd thirdParty ad">
-          <div id="div-gpt-mob-square-flex-1" data-tier="1"></div>
-      </div>
-    <div class="monetate thirdParty"><a href="http://win.parents.com/">Win Baby Gear!</a></div>  </div>
-  <div class="slideNavigation slideNavigation--bottom">
-<a href="#" class="previousSlide">Previous slide</a>
-<a href="#" class="nextSlide">Next slide</a>
-</div>
-</div>
-<div div data-slide-number="2" class="slide">
-  <div class="slideOfTotal slideOfTotal--outside largeUp">
-    <span class="page">2</span>
-    <span class="total">of 19</span>
-  </div>
-  <div class="slideImage">
+      <div class="slideImage">
         <div class="slideImageInnerWrapper">
-          <img class="lazySlideImage lazy" data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/p_IS45075.jpg" />
-                  <span class="imageForEverythingInThisSlideshow" style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/p_IS45075.jpg')"></span>
+          <img class="lazySlideImage lazy"
+               data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/p_IS45075.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/p_IS45075.jpg')"></span>
             <span class="slideOfTotal">
         <span class="page">2</span> <span class="total">of 19</span>
       </span>
-      <div class="gigyaShareDirectApi">
-        <span class="facebookSs"><a href="#" class="facebookShare">Facebook</a></span>
-        <a href="#" class="pinterestShare"
-        data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D2&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_IS45075.jpg&amp;description=%3Cp%3EThis+is+a+very+common+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2F%22+%3Epregnancy%3C%2Fa%3E+symptom%2C+says+Goist.+%22Breast+tissue+is+extremely+hormone-sensitive%2C%22+she+explains.+%22When+progesterone+and+hCG+start+flooding+the+body+after+the+egg+is+fertilized%2C+they+increase+your+blood+volume%2C+which+makes+your+breasts+swell+and+feel+heavier+than+usual.%22%3C%2Fp%3E">Pinterest</a>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D2&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_IS45075.jpg&amp;description=%3Cp%3EThis+is+a+very+common+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2F%22+%3Epregnancy%3C%2Fa%3E+symptom%2C+says+Goist.+%22Breast+tissue+is+extremely+hormone-sensitive%2C%22+she+explains.+%22When+progesterone+and+hCG+start+flooding+the+body+after+the+egg+is+fertilized%2C+they+increase+your+blood+volume%2C+which+makes+your+breasts+swell+and+feel+heavier+than+usual.%22%3C%2Fp%3E">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          <p>Early Pregnancy Signs: Sore Breasts</p>
+        </h3>
+        <div class="slideDescription">
+          <p>
+          <p>This is a very common <a href="http://www.parents.com/pregnancy/">pregnancy</a>
+            symptom, says Goist. "Breast tissue is extremely hormone-sensitive,"
+            she explains. "When progesterone and hCG start flooding the body
+            after
+            the egg is fertilized, they increase your blood volume, which makes
+            your breasts swell and feel heavier than usual."</p></p>
+        </div>
+        <ul class="slideLinks">
+          <li><a
+            href="http://www.parents.com/shop/maternity/books/pregnancy-a3508.html">Shop
+            our books on pregnancy now</a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
       </div>
     </div>
+    <div data-slide-number="3" class="slide slide--video">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">3</span>
+        <span class="total">of 19</span>
       </div>
-  <div class="restOfTheSlide">
-    <h3 class="slideTitle" data-slide-number="2">
-      <p>Early Pregnancy Signs: Sore Breasts</p>
-    </h3>
-          <div class="slideDescription">
-        <p><p>This is a very common <a href="http://www.parents.com/pregnancy/" >pregnancy</a> symptom, says Goist. "Breast tissue is extremely hormone-sensitive," she explains. "When progesterone and hCG start flooding the body after the egg is fertilized, they increase your blood volume, which makes your breasts swell and feel heavier than usual."</p></p>
-      </div>
-              <ul class="slideLinks">
-                  <li><a href="http://www.parents.com/shop/maternity/books/pregnancy-a3508.html">Shop our books on pregnancy now</a></li>
-              </ul>
-                <div class="monetate thirdParty"><a href="http://win.parents.com/">Win Baby Gear!</a></div>  </div>
+      <div class="slideImage">
 
-<div class="slideNavigation slideNavigation--bottom">
-<a href="#" class="previousSlide">Previous slide</a>
-<a href="#" class="nextSlide">Next slide</a>
-</div>
-</div>
-<div div data-slide-number="3" class="slide slide--video">
-  <div class="slideOfTotal slideOfTotal--outside largeUp">
-    <span class="page">3</span>
-    <span class="total">of 19</span>
-  </div>
-  <div class="slideImage">
-          
-  <h3 class="videoTitle">Your Pregnancy: 5 Early Pregnancy Symptoms Most Women Deal With</h3>
+        <h3 class="videoTitle">Your Pregnancy: 5 Early Pregnancy Symptoms Most
+          Women Deal With</h3>
         <div class="slideImageInnerWrapper">
-          
-  <div class="videoPlayer" data-popup="true" data-width="560" data-height="400" data-videoembedurl="http://www.parents.com/videos/video-embed/83144531/your-pregnancy-5-early-pregnancy-symptoms-most-women-deal-with.htm?autoplay=true&amp;preload=true&amp;transcript=false&amp;social=true&amp;metaq=true&amp;includecompads=true&amp;cssurl=http%3A//www.bhg.com/etc/designs/bhg/assets/responsive/rampVideoOverride.css&amp;videoIDs=83144531" data-videotitle="Your Pregnancy: 5 Early Pregnancy Symptoms Most Women Deal With">
-    <span class="playvideoLarge"></span>
-    <img class="lazySlideImage lazy" data-src="http://www.parents.com/videos/hosting/media/parents/1620906/83144531/medium.png" alt="Your Pregnancy: 5 Early Pregnancy Symptoms Most Women Deal With" />  </div>
-                      <span class="imageForEverythingInThisSlideshow" style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_200/public/externals/1ba0c1754398df6885be3c910669753d.png')"></span>
+
+          <div class="videoPlayer" data-popup="true" data-width="560"
+               data-height="400"
+               data-videoembedurl="http://www.parents.com/videos/video-embed/83144531/your-pregnancy-5-early-pregnancy-symptoms-most-women-deal-with.htm?autoplay=true&preload=true&transcript=false&social=true&metaq=true&includecompads=true&cssurl=http%3A//www.bhg.com/etc/designs/bhg/assets/responsive/rampVideoOverride.css&videoIDs=83144531"
+               data-videotitle="Your Pregnancy: 5 Early Pregnancy Symptoms Most Women Deal With">
+            <span class="playvideoLarge"></span>
+            <img class="lazySlideImage lazy"
+                 data-src="http://www.parents.com/videos/hosting/media/parents/1620906/83144531/medium.png"
+                 alt="Your Pregnancy: 5 Early Pregnancy Symptoms Most Women Deal With"/>
+          </div>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_200/public/externals/1ba0c1754398df6885be3c910669753d.png')"></span>
             <span class="slideOfTotal">
         <span class="page">3</span> <span class="total">of 19</span>
       </span>
-      <div class="gigyaShareDirectApi">
-        <span class="facebookSs"><a href="#" class="facebookShare">Facebook</a></span>
-        <a href="#" class="pinterestShare"
-        data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D3&amp;media=&amp;description=%3Cp%3EWhat+are+the+five+most+common+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2F%22+%3Eearly+pregnancy+symptoms%3C%2Fa%3E%3F+Check+out+the+video%2C+and+watch+Dr.+Obosa+Osawe+explain.%3C%2Fp%3E">Pinterest</a>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D3&amp;media=&amp;description=%3Cp%3EWhat+are+the+five+most+common+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2F%22+%3Eearly+pregnancy+symptoms%3C%2Fa%3E%3F+Check+out+the+video%2C+and+watch+Dr.+Obosa+Osawe+explain.%3C%2Fp%3E">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          <p>Common Early Symptoms</p>
+        </h3>
+        <div class="slideDescription">
+          <p>
+          <p>What are the five most common <a
+            href="http://www.parents.com/pregnancy/signs/symptoms/">early
+            pregnancy symptoms</a>? Check out the video, and watch Dr. Obosa
+            Osawe
+            explain.</p></p>
+        </div>
+        <div class="mobileAd thirdParty ad">
+          <div id="div-gpt-mob-square-flex-2" data-tier="2"></div>
+        </div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
       </div>
     </div>
+    <div data-slide-number="4" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">4</span>
+        <span class="total">of 19</span>
       </div>
-  <div class="restOfTheSlide">
-    <h3 class="slideTitle" data-slide-number="3">
-      <p>Common Early Symptoms</p>
-    </h3>
-          <div class="slideDescription">
-        <p><p>What are the five most common <a href="http://www.parents.com/pregnancy/signs/symptoms/" >early pregnancy symptoms</a>? Check out the video, and watch Dr. Obosa Osawe explain.</p></p>
-      </div>
-                  <div class="mobileAd thirdParty ad">
-          <div id="div-gpt-mob-square-flex-2" data-tier="2"></div>
-      </div>
-    <div class="monetate thirdParty"><a href="http://win.parents.com/">Win Baby Gear!</a></div>  </div>
-
-<div class="slideNavigation slideNavigation--bottom">
-<a href="#" class="previousSlide">Previous slide</a>
-<a href="#" class="nextSlide">Next slide</a>
-</div>
-</div>
-<div div data-slide-number="4" class="slide">
-  <div class="slideOfTotal slideOfTotal--outside largeUp">
-    <span class="page">4</span>
-    <span class="total">of 19</span>
-  </div>
-  <div class="slideImage">
+      <div class="slideImage">
         <div class="slideImageInnerWrapper">
-          <img class="lazySlideImage lazy" data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/p_46255_0.jpg" />
-                  <span class="imageForEverythingInThisSlideshow" style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/p_46255_0.jpg')"></span>
+          <img class="lazySlideImage lazy"
+               data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/p_46255_0.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/p_46255_0.jpg')"></span>
             <span class="slideOfTotal">
         <span class="page">4</span> <span class="total">of 19</span>
       </span>
-      <div class="gigyaShareDirectApi">
-        <span class="facebookSs"><a href="#" class="facebookShare">Facebook</a></span>
-        <a href="#" class="pinterestShare"
-        data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D4&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_46255_0.jpg&amp;description=%3Cp%3EYou+may+feel+crampy+like+you+have+or+are+about+to+get+your+period%2C+but+this+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2F%22+%3Epregnancy%3C%2Fa%3E+sign+is+actually+triggered+by+implantation+--+when+the+fertilized+egg+attaches+to+the+uterine+wall.+Your+uterus+may+be+stretching+a+little+now+%28hence+the+cramps%29+to+prep+for+its+massive+expansion+over+the+next+nine+months.%3C%2Fp%3E">Pinterest</a>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D4&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_46255_0.jpg&amp;description=%3Cp%3EYou+may+feel+crampy+like+you+have+or+are+about+to+get+your+period%2C+but+this+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2F%22+%3Epregnancy%3C%2Fa%3E+sign+is+actually+triggered+by+implantation+--+when+the+fertilized+egg+attaches+to+the+uterine+wall.+Your+uterus+may+be+stretching+a+little+now+%28hence+the+cramps%29+to+prep+for+its+massive+expansion+over+the+next+nine+months.%3C%2Fp%3E">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          <p>Early Pregnancy Signs: Cramps</p>
+        </h3>
+        <div class="slideDescription">
+          <p>
+          <p>You may feel crampy like you have or are about to get your period,
+            but this <a href="http://www.parents.com/pregnancy/">pregnancy</a>
+            sign is actually triggered by implantation -- when the fertilized
+            egg
+            attaches to the uterine wall. Your uterus may be stretching a little
+            now (hence the cramps) to prep for its massive expansion over the
+            next
+            nine months.</p></p>
+        </div>
+        <ul class="slideLinks">
+          <li><a href="http://www.parents.com/pregnancy/am-i-pregnant/">Am I
+            pregnant? Take our quiz now.</a></li>
+          <li><a
+            href="http://www.parents.com/getting-pregnant/fertility/boost/ways-to-boost-your-fertility/">Stil
+            not pregnant? Easy ways to boost your fertility.</a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
       </div>
     </div>
+    <div data-slide-number="5" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">5</span>
+        <span class="total">of 19</span>
       </div>
-  <div class="restOfTheSlide">
-    <h3 class="slideTitle" data-slide-number="4">
-      <p>Early Pregnancy Signs: Cramps</p>
-    </h3>
-          <div class="slideDescription">
-        <p><p>You may feel crampy like you have or are about to get your period, but this <a href="http://www.parents.com/pregnancy/" >pregnancy</a> sign is actually triggered by implantation -- when the fertilized egg attaches to the uterine wall. Your uterus may be stretching a little now (hence the cramps) to prep for its massive expansion over the next nine months.</p></p>
-      </div>
-              <ul class="slideLinks">
-                  <li><a href="http://www.parents.com/pregnancy/am-i-pregnant/">Am I pregnant? Take our quiz now.</a></li>
-                  <li><a href="http://www.parents.com/getting-pregnant/fertility/boost/ways-to-boost-your-fertility/">Stil not pregnant? Easy ways to boost your fertility.</a></li>
-              </ul>
-                <div class="monetate thirdParty"><a href="http://win.parents.com/">Win Baby Gear!</a></div>  </div>
-<div class="slideNavigation slideNavigation--bottom">
-<a href="#" class="previousSlide">Previous slide</a>
-<a href="#" class="nextSlide">Next slide</a>
-</div>
-</div>
-<div div data-slide-number="5" class="slide">
-  <div class="slideOfTotal slideOfTotal--outside largeUp">
-    <span class="page">5</span>
-    <span class="total">of 19</span>
-  </div>
-  <div class="slideImage">
+      <div class="slideImage">
         <div class="slideImageInnerWrapper">
-          <img class="lazySlideImage lazy" data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/p_583035.jpg" />
-                  <span class="imageForEverythingInThisSlideshow" style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/p_583035.jpg')"></span>
+          <img class="lazySlideImage lazy"
+               data-src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/p_583035.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://images.parents.mdpcdn.com/sites/parents.com/files/styles/square_100/public/images/p_583035.jpg')"></span>
             <span class="slideOfTotal">
         <span class="page">5</span> <span class="total">of 19</span>
       </span>
-      <div class="gigyaShareDirectApi">
-        <span class="facebookSs"><a href="#" class="facebookShare">Facebook</a></span>
-        <a href="#" class="pinterestShare"
-        data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D5&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_583035.jpg&amp;description=%3Cp%3E%22Many+women+mistake+some+light+bleeding+for+a+period%2C+but+as+many+as+25+percent+will+have+some+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fstages%2F1st-trimester-health%2Fspotting-during-pregnancy%2F%22+%3Espotting%3C%2Fa%3E+during+implantation%2C%22+says+Goist.+If+you+notice+that+your+%22period%22+seems+way+shorter+or+different+from+usual%2C+it+may+be+a+sign+of+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2F%22+%3Epregnancy%3C%2Fa%3E.%3C%2Fp%3E">Pinterest</a>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D5&amp;media=http%3A%2F%2Fimages.parents.mdpcdn.com%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_583035.jpg&amp;description=%3Cp%3E%22Many+women+mistake+some+light+bleeding+for+a+period%2C+but+as+many+as+25+percent+will+have+some+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2Fstages%2F1st-trimester-health%2Fspotting-during-pregnancy%2F%22+%3Espotting%3C%2Fa%3E+during+implantation%2C%22+says+Goist.+If+you+notice+that+your+%22period%22+seems+way+shorter+or+different+from+usual%2C+it+may+be+a+sign+of+%3Ca+href%3D%22http%3A%2F%2Fwww.parents.com%2Fpregnancy%2F%22+%3Epregnancy%3C%2Fa%3E.%3C%2Fp%3E">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          <p>Early Pregnancy Signs: Spotting</p>
+        </h3>
+        <div class="slideDescription">
+          <p>
+          <p>"Many women mistake some light bleeding for a period, but as many
+            as
+            25 percent will have some <a
+              href="http://www.parents.com/pregnancy/stages/1st-trimester-health/spotting-during-pregnancy/">spotting</a>
+            during implantation," says Goist. If you notice that your "period"
+            seems way shorter or different from usual, it may be a sign of <a
+              href="http://www.parents.com/pregnancy/">pregnancy</a>.</p></p>
+        </div>
+        <ul class="slideLinks">
+          <li><a
+            href="http://www.parents.com/pregnancy/week-by-week/your-pregnancy-to-do-list/">Your
+            early pregnancy to-do list.</a></li>
+        </ul>
+        <div class="mobileAd thirdParty ad">
+          <div id="div-gpt-mob-square-flex-3" data-tier="3"></div>
+        </div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
       </div>
     </div>
+    <div data-slide-number="6" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">6</span>
+        <span class="total">of 19</span>
       </div>
-  <div class="restOfTheSlide">
-    <h3 class="slideTitle" data-slide-number="5">
-      <p>Early Pregnancy Signs: Spotting</p>
-    </h3>
-          <div class="slideDescription">
-        <p><p>"Many women mistake some light bleeding for a period, but as many as 25 percent will have some <a href="http://www.parents.com/pregnancy/stages/1st-trimester-health/spotting-during-pregnancy/" >spotting</a> during implantation," says Goist. If you notice that your "period" seems way shorter or different from usual, it may be a sign of <a href="http://www.parents.com/pregnancy/" >pregnancy</a>.</p></p>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_101458454.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_101458454.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">6</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D6&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_101458454.jpg&amp;description=There%27s%20tired%2C%20and%20then%20there%27s%20this%3A%20If%20all%20you%20can%20think%20about%20at%20work%20is%20taking%20a%20nap%20or%20if%20you%27re%20too%20exhausted%20to%20keep%20up%20with%20everyday%20activities%20like%20hitting%20the%20gym%2C%20then%20it%20may%20be%20your%20body%20one%20of%20the%20earliest%20signs%20of%20pregnancy.%20%22Even%20at%20this%20early%20stage%20of%20pregnancy%20--%20within%20two%20weeks%20of%20conception%20--%20your%20baby%20is%20starting%20to%20use%20up%20your%20calories%2C%20which%20can%20wipe%20out%20your%20energy%20stores%20pretty%20quickly%2C%22%20says%20Goist.">Pinterest</a>
+          </div>
+        </div>
+        <p class="nodeImage__photoCredit">cultura Photography/ Veer
+        </p>
       </div>
-              <ul class="slideLinks">
-                  <li><a href="http://www.parents.com/pregnancy/week-by-week/your-pregnancy-to-do-list/">Your early pregnancy to-do list.</a></li>
-              </ul>
-              <div class="mobileAd thirdParty ad">
-          <div id="div-gpt-mob-square-flex-3" data-tier="3"></div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Fatigue </h3>
+        <div class="slideDescription">
+          <p>There's tired, and then there's this: If all you can think about at
+            work is taking a nap or if you're too exhausted to keep up with
+            everyday activities like hitting the gym, then it may be your body
+            one
+            of the <a href="http://www.parents.com/pregnancy/signs/">earliest
+              signs of pregnancy</a>. "Even at this early stage of <a
+              href="http://www.parents.com/pregnancy/">pregnancy</a> -- within
+            two
+            weeks of conception -- your baby is starting to use up your
+            calories,
+            which can wipe out your energy stores pretty quickly," says Goist.
+          </p>
+        </div>
+        <ul class="slideLinks">
+          <li><a href="http://www.parents.com/shop/gear-c3903.html">Shop for
+            baby
+            gear in our store</a></li>
+          <li><a
+            href="http://www.parents.com/pregnancy/my-body/nutrition/15-pregnancy-power-foods1/">Early
+            pregnancy power foods.</a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
       </div>
-    <div class="monetate thirdParty"><a href="http://win.parents.com/">Win Baby Gear!</a></div>  </div>
-<div class="slideNavigation slideNavigation--bottom">
-<a href="#" class="previousSlide">Previous slide</a>
-</div>
-</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="7" class="slide slide--largeMedia slide--video">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">7</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
 
-        <script src="js/index.js"></script>
+        <h3 class="videoTitle">Sperm Meets Egg: Weeks 1 to 3 of Pregnancy</h3>
+        <div class="slideImageInnerWrapper">
 
-    
-    
-    
-  </body>
+          <div class="videoPlayerWrapper">
+            <div class="videoPlayer" data-popup="false" data-width="560"
+                 data-height="400"
+                 data-videoembedurl="http://www.parents.com/videos/video-embed/63983316/sperm-meets-egg-weeks-1-to-3-of-pregnancy.htm?autoplay=true&amp;preload=true&amp;transcript=false&amp;social=true&amp;metaq=true&amp;includecompads=true&amp;cssurl=http%3A//www.bhg.com/etc/designs/bhg/assets/responsive/rampVideoOverride.css&amp;videoIDs=63983316"
+                 data-videotitle="Sperm Meets Egg: Weeks 1 to 3 of Pregnancy">
+              <span class="playvideoLarge"></span>
+              <img class="lazySlideImage lazy"
+                   data-src="http://www.parents.com/videos/hosting/media/parents/1620906/63983316/medium.jpg"
+                   alt="Sperm Meets Egg: Weeks 1 to 3 of Pregnancy"/></div>
+          </div>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_200/public/externals/23465fdc6ba66538e2d9532775951513.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">7</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D7&amp;media=http://www.parents.com/videos/hosting/media/parents/1620906/63983316/medium.jpg&amp;description=">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+        </h3>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="8" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">8</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_HBL1885.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_HBL1885.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">8</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D8&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_HBL1885.jpg&amp;description=Are%20the%20boobs%20are%20looking%20a%20little%20different%20these%20days%3F%20Pregnancy%20hormones%20also%20affect%20the%20activity%20of%20melanocytes%2C%20or%20cells%20in%20the%20nipples%20responsible%20for%20their%20color.%20%22Darker-complexioned%20women%20may%20not%20notice%20this%20until%20later%20in%20pregnancy%20--%20say%2C%20around%2010%20weeks%20or%20so%2C%22%20says%20Goist.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Nipple Darkening </h3>
+        <div class="slideDescription">
+          <p>Are the boobs are looking a little different these days? <a
+            href="http://www.parents.com/pregnancy/">Pregnancy</a> hormones also
+            affect the activity of melanocytes, or cells in the nipples
+            responsible for their color. "Darker-complexioned women may not
+            notice
+            this until later in pregnancy -- say, around 10 weeks or so," says
+            Goist.</p></div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="9" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">9</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_WOM39.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_WOM39.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">9</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D9&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_WOM39.jpg&amp;description=While%20full-blown%20morning%20sickness%20--%20which%20affects%20up%20to%2085%20percent%20of%20all%20preggos%20--%20likely%20won%27t%20strike%20for%20a%20few%20more%20weeks%2C%20some%20women%20may%20experience%20more%20subtle%20motion%20sickness%20as%20an%20early%20pregnancy%20symptom.%20%22I%27ve%20had%20patients%20tell%20me%20they%27d%20suddenly%20get%20queasy%20from%20reading%20in%20the%20car%20or%20would%20feel%20sick%20during%20flights%2C%22%20says%20Goist.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Nausea </h3>
+        <div class="slideDescription">
+          <p>While full-blown <a
+            href="http://www.parents.com/pregnancy/my-body/morning-sickness/">morning
+            sickness</a> -- which affects up to 85 percent of all preggos --
+            likely won't strike for a few more weeks, some women may experience
+            more subtle motion sickness as an <a
+              href="http://www.parents.com/pregnancy/signs/symptoms/">early
+              pregnancy symptom</a>. "I've had patients tell me they'd suddenly
+            get queasy from reading in the car or would feel sick during
+            flights,"
+            says Goist.</p></div>
+        <ul class="slideLinks">
+          <li><a
+            href="http://www.parents.com/getting-pregnant/fertility/boost/ways-to-boost-your-fertility/">Find
+            out how to boost your fertility.</a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="10" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">10</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_BXP68885m.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_BXP68885m.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">10</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D10&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_BXP68885m.jpg&amp;description=Can%27t%20zip%20up%20those%20skinny%20jeans%3F%20Ramped-up%20levels%20of%20progesterone%20slow%20down%20your%20digestive%20track%20and%20may%20make%20your%20tummy%20feel%20puffier%20than%20usual.%20%28This%20also%20happens%20during%20PMS%2C%20notes%20Goist%2C%20but%20bloating%20stops%20when%20your%20period%20arrives%2C%20causing%20progesterone%20levels%20to%20plummet.%29%20If%20the%20bloating%20doesn%27t%20go%20away%20--%20and%20your%20period%20never%20comes%20--%20start%20watching%20for%20that%20stick%20to%20turn%20pink.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Bloating </h3>
+        <div class="slideDescription">
+          <p>Can't zip up those skinny jeans? Ramped-up levels of progesterone
+            slow down your digestive track and may make your tummy feel puffier
+            than usual. (This also happens during PMS, notes Goist, but bloating
+            stops when your period arrives, causing progesterone levels to
+            plummet.) If the bloating doesn't go away -- and your period never
+            comes -- start watching for that stick to turn pink.</p></div>
+        <ul class="slideLinks">
+          <li><a
+            href="http://www.parents.com/shop/maternity/clothes-c3509.html">Shop
+            Maternity clothes in the Parents Store now</a></li>
+          <li><a
+            href="http://www.parents.com/pregnancy/week-by-week/your-changing-body/">How
+            will your body change through early pregnancy and beyond?</a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="11" class="slide slide--largeMedia slide--video">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">11</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+
+        <h3 class="videoTitle">An Embryo Forms: Weeks 4 to 8 of Pregnancy</h3>
+        <div class="slideImageInnerWrapper">
+
+          <div class="videoPlayerWrapper">
+            <div class="videoPlayer" data-popup="false" data-width="560"
+                 data-height="400"
+                 data-videoembedurl="http://www.parents.com/videos/video-embed/63981399/an-embryo-forms-weeks-4-to-8-of-pregnancy.htm?autoplay=true&amp;preload=true&amp;transcript=false&amp;social=true&amp;metaq=true&amp;includecompads=true&amp;cssurl=http%3A//www.bhg.com/etc/designs/bhg/assets/responsive/rampVideoOverride.css&amp;videoIDs=63981399"
+                 data-videotitle="An Embryo Forms: Weeks 4 to 8 of Pregnancy">
+              <span class="playvideoLarge"></span>
+              <img class="lazySlideImage lazy"
+                   data-src="http://www.parents.com/videos/hosting/media/parents/1620906/63981399/medium.jpg"
+                   alt="An Embryo Forms: Weeks 4 to 8 of Pregnancy"/></div>
+          </div>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_200/public/externals/e6c013f3675c3b5fd2cd1488b7877259.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">11</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D11&amp;media=http://www.parents.com/videos/hosting/media/parents/1620906/63981399/medium.jpg&amp;description=">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+        </h3>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="12" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">12</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_101633135.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_101633135.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">12</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D12&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_101633135.jpg&amp;description=Getting%20up%20for%20more%20bathroom%20breaks%20may%20be%20the%20result%20of%20your%20kidneys%20starting%20to%20kick%20into%20overdrive%20during%20early%20pregnancy%3B%20they%20have%20to%20flush%20out%20fluid%20more%20efficiently%20during%20pregnancy.%20%28Watch%20out%20for%20this%20one%20at%20the%20end%20of%20pregnancy%20too%20--%20but%20then%20it%27s%20more%20due%20to%20your%20gigundo%20uterus%20pressing%20on%20your%20bladder.%29">Pinterest</a>
+          </div>
+        </div>
+        <p class="nodeImage__photoCredit">iStockphoto
+        </p>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Peeing More Often </h3>
+        <div class="slideDescription">
+          <p>Getting up for more bathroom breaks may be the result of your
+            kidneys
+            starting to kick into overdrive during early pregnancy; they have to
+            flush out fluid more efficiently during pregnancy. (Watch out for
+            this
+            one at the end of pregnancy too -- but then it's more due to your
+            gigundo uterus pressing on your bladder.)</p></div>
+        <ul class="slideLinks">
+          <li><a
+            href="http://www.parents.com/pregnancy/week-by-week/your-pregnancy-to-do-list/">Early
+            pregnancy to-do list.</a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="13" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">13</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_WOM35.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_WOM35.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">13</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D13&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_WOM35.jpg&amp;description=At%20this%20point%2C%20you%27re%20more%20likely%20jonesing%20for%20a%20jumbo%20bagel%20than%20pickles%20or%20Rocky%20Road.%20%22Your%20overtired%20body%20may%20demand%20extra%20carbs%20now%20because%20they%27re%20easily%20metabolized%2C%20which%20helps%20keep%20energy%20levels%20up%2C%22%20says%20Goist.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Cravings </h3>
+        <div class="slideDescription">
+          <p>At this point, you're more likely jonesing for a jumbo bagel than
+            pickles or Rocky Road. "Your overtired body may demand extra carbs
+            now
+            because they're easily metabolized, which helps keep energy levels
+            up," says Goist.</p></div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="14" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">14</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_42068.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_42068.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">14</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D14&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_42068.jpg&amp;description=Increasing%20blood%20volume%20may%20trigger%20frequent%20but%20mild%20tension%20headaches%20in%20the%20first%20few%20weeks%20of%20pregnancy%2C%20but%20this%20sign%20of%20pregnancy%20should%20let%20up%20as%20your%20body%20adjusts%20to%20elevated%20hormone%20levels.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Headaches </h3>
+        <div class="slideDescription">
+          <p>Increasing blood volume may trigger frequent but mild tension
+            headaches in the first few weeks of <a
+              href="http://www.parents.com/pregnancy/">pregnancy</a>, but this
+            sign of pregnancy should let up as your body adjusts to elevated
+            hormone levels.</p></div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="15" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">15</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_583047.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_583047.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">15</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D15&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_583047.jpg&amp;description=The%20same%20hormones%20responsible%20for%20bloating%20are%20also%20behind%20your%20potty%20problems.%20Because%20your%20digestive%20track%20is%20slowing%20down%20now%2C%20says%20Goist%2C%20food%20may%20not%20pass%20through%20as%20quickly.%20This%20symptom%20will%20likely%20ramp%20up%20even%20more%20%28sorry%29%20as%20your%20pregnancy%20progresses.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Constipation </h3>
+        <div class="slideDescription">
+          <p>The same hormones responsible for bloating are also behind your
+            potty
+            problems. Because your digestive track is slowing down now, says
+            Goist, food may not pass through as quickly. This symptom will
+            likely
+            ramp up even more (sorry) as your <a
+              href="http://www.parents.com/pregnancy/">pregnancy</a> progresses.
+          </p></div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="16" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">16</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_16830CLI.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_16830CLI.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">16</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D16&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_16830CLI.jpg&amp;description=%22As%20levels%20of%20hCG%20hormones%20increase%2C%20you%27re%20feeling%20massive%20amounts%20of%20fatigue%2C%20which%20makes%20you%20more%20prone%20to%20moodiness%2C%22%20says%20Goist.%20Plus%2C%20um%2C%20that%20stellar%20combo%20of%20headaches%2C%20bloating%2C%20constipation%20and%20breast%20pain%20--%20need%20we%20say%20more%3F">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Mood Swings </h3>
+        <div class="slideDescription">
+          <p>"As levels of hCG hormones increase, you're feeling massive amounts
+            of fatigue, which makes you more prone to moodiness," says Goist.
+            Plus, um, that stellar combo of headaches, bloating, constipation
+            and
+            breast pain -- need we say more?</p></div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+    <div data-slide-number="17" class="slide slide--largeMedia slide--video">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">17</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+
+        <h3 class="videoTitle">Tips for Taking an At-Home Pregnancy Test</h3>
+        <div class="slideImageInnerWrapper">
+
+          <div class="videoPlayerWrapper">
+            <div class="videoPlayer" data-popup="false" data-width="560"
+                 data-height="400"
+                 data-videoembedurl="http://www.parents.com/videos/video-embed/70569199/tips-for-taking-an-at-home-pregnancy-test.htm?autoplay=true&amp;preload=true&amp;transcript=false&amp;social=true&amp;metaq=true&amp;includecompads=true&amp;cssurl=http%3A//www.bhg.com/etc/designs/bhg/assets/responsive/rampVideoOverride.css&amp;videoIDs=70569199"
+                 data-videotitle="Tips for Taking an At-Home Pregnancy Test">
+              <span class="playvideoLarge"></span>
+              <img class="lazySlideImage lazy"
+                   data-src="http://www.parents.com/videos/hosting/media/parents/1620906/70569199/medium.jpg"
+                   alt="Tips for Taking an At-Home Pregnancy Test"/></div>
+          </div>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_200/public/externals/1e396cd474e90bce8dd2552e879d1a52.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">17</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D17&amp;media=http://www.parents.com/videos/hosting/media/parents/1620906/70569199/medium.jpg&amp;description=">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+        </h3>
+        <ul class="slideLinks">
+          <li><a
+            href="http://www.parents.com/pregnancy/my-body/nutrition/15-pregnancy-power-foods1/">Foods
+            to help your power through early pregnancy. </a></li>
+        </ul>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+
+    <div data-slide-number="18" class="slide">
+      <div class="slideOfTotal slideOfTotal--outside largeUp">
+        <span class="page">18</span>
+        <span class="total">of 19</span>
+      </div>
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <img class="lazySlideImage lazy"
+               data-src="http://local.parents.com:1235/sites/parents.com/files/styles/width_360/public/images/p_IS508_057.jpg"/>
+        <span class="imageForEverythingInThisSlideshow"
+              style="background-image: url('http://local.parents.com:1235/sites/parents.com/files/styles/square_100/public/images/p_IS508_057.jpg')"></span>
+            <span class="slideOfTotal">
+        <span class="page">18</span> <span class="total">of 19</span>
+      </span>
+          <div class="gigyaShareDirectApi">
+          <span class="facebookSs"><a href="#"
+                                      class="facebookShare">Facebook</a></span>
+            <a href="#" class="pinterestShare"
+               data-pin-href="//pinterest.com/pin/create/button/?guid=&amp;url=http%3A%2F%2Flocal.parents.com%3A1235%2Fpregnancy%2Fsigns%2Fsymptoms%2Fsigns-you-may-be-pregnant%2F%3Fpage%3D18&amp;media=http%3A%2F%2Flocal.parents.com%3A1235%2Fsites%2Fparents.com%2Ffiles%2Fstyles%2Fwidth_360%2Fpublic%2Fimages%2Fp_IS508_057.jpg&amp;description=Measuring%20BBT%20--%20your%20oral%20temperature%20first%20thing%20in%20the%20morning%20--%20is%20usually%20used%20to%20indicate%20when%20you%27re%20ovulating.%20It%27s%20typically%20about%20half%20a%20degree%20or%20more%20higher%20or%20so%20when%20an%20egg%20is%20released%20and%20remains%20elevated%20until%20you%20get%20your%20period.%20So%20if%20you%27re%20charting%20BBT%20and%20notice%20it%20hasn%27t%20decreased%20in%20more%20than%20two%20weeks%2C%20it%20may%20mean%20you%27ve%20got%20a%20baby%20on%20the%20way.%20FYI%3A%20You%27ll%20need%20a%20special%20digital%20basal%20thermometer%20%28try%20drugstore.com%20or%20amazon.com%29%20to%20do%20this%3B%20it%27s%20more%20precise%20than%20normal%20fever-measuring%20thermometers.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Copyright%20%26copy%3B%20Parents.com%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20All%20content%2C%20including%20medical%20opinion%20and%20any%20other%20health-related%20information%2C%20is%20for%20informational%20purposes%20only%20and%20should%20not%20be%20considered%20to%20be%20a%20specific%20diagnosis%20or%20treatment%20plan%20for%20any%20individual%20situation.%20Use%20of%20this%20site%20and%20the%20information%20contained%20herein%20does%20not%20create%20a%20doctor-patient%20relationship.%20Always%20seek%20the%20direct%20advice%20of%20your%20own%20doctor%20in%20connection%20with%20any%20questions%20or%20issues%20you%20may%20have%20regarding%20your%20own%20health%20or%20the%20health%20of%20others.">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <h3 class="slideTitle">
+          Early Pregnancy Signs: Basal Body Temperature </h3>
+        <div class="slideDescription">
+          <p>Measuring BBT -- your oral temperature first thing in the morning
+            --
+            is usually used to indicate when you're ovulating. It's typically
+            about half a degree or more higher or so when an egg is released and
+            remains elevated until you get your period. So if you're charting
+            BBT
+            and notice it hasn't decreased in more than two weeks, it may mean
+            you've got a baby on the way. FYI: You'll need a special digital
+            basal
+            thermometer (try drugstore.com or amazon.com) to do this; it's more
+            precise than normal fever-measuring thermometers.</p>
+          <p><i>Copyright &copy; Parents.com</i></p>
+          <p><i>All content, including medical opinion and any other
+            health-related information, is for informational purposes only and
+            should not be considered to be a specific diagnosis or treatment
+            plan
+            for any individual situation. Use of this site and the information
+            contained herein does not create a doctor-patient relationship.
+            Always
+            seek the direct advice of your own doctor in connection with any
+            questions or issues you may have regarding your own health or the
+            health of others.</i></p></div>
+        <div class="monetate thirdParty"><a href="http://win.parents.com/">Win
+          Baby Gear!</a></div>
+      </div>
+      <div class="slideNavigation slideNavigation--bottom">
+        <a href="#" class="previousSlide">Previous slide</a>
+        <a href="#" class="nextSlide">Next slide</a>
+      </div>
+    </div>
+
+    <div data-slide-number="19" class="slide lastSlide">
+      <div class="slideImage">
+        <div class="slideImageInnerWrapper">
+          <div id="monetateLastSlideTargeter" class="monetateLastSlideTargeter">
+            <a href="http://win.parents.com/"><img class="lazy lazySlideImage"
+                                                   data-src="http://images.meredith.com/parents/images/marketing/Registration/OnsiteDefaults/600x400_11837_1_DSDFLT.jpg"/></a>
+          </div>
+            <span class="slideOfTotal">
+              <span class="page">19</span> <span class="total">of 19</span>
+            </span>
+        </div>
+      </div>
+      <div class="restOfTheSlide">
+        <a class="nextSlideshowImage"
+           href="http://dev.parents.com/pregnancy/my-body/changing/6-strange-pregnancy-symptoms/"
+           style="background-image:url('http://dev.parents.com/sites/parents.com/files/styles/width_300/public/images/p_BXP152515m.jpg')">
+          <span><span>Next Slideshow</span></span>
+        </a>
+        <h3 class="nextSlideshowTitle">
+          <a
+            href="http://dev.parents.com/pregnancy/my-body/changing/6-strange-pregnancy-symptoms/">6
+            Strange Pregnancy Symptoms</a>
+        </h3>
+        <div class="slideDescription">
+          Everyone expects morning sickness and funny cravings during
+          pregnancy,... <a
+          href="http://dev.parents.com/pregnancy/my-body/changing/6-strange-pregnancy-symptoms/">more</a>
+        </div>
+        <a href="#" class="beginSlideshow">Begin Slideshow</a>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+  <script
+    src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/purl/2.3.1/purl.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
 </html>

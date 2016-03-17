@@ -1,0 +1,42 @@
+@mixin backgroundImageCenterCrop() {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin iconFontFamily() {
+  font-family: 'parIconFont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin resetDefaultLinkStyle() {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+  &:visited {
+    color: inherit;
+  }
+}
+
+/// Fix to deal with issue where sass 3.4.10 returns symbol instead of icon font https://github.com/sass/sass/issues/1395
+@function unicode($str, $times: 1) {
+
+  $result: unquote("\\") + $str;
+
+  @for $i from 1 to $times {
+    $result: $result + unquote("\\") + $str;
+  }
+
+  @return unquote("\"") + $result + unquote("\"");
+}
