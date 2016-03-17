@@ -1,10 +1,10 @@
 @import "compass";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 @import "partials/colors";
+@import "partials/fontImport";
 @import "partials/iconFont";
 @import "partials/mixins";
+@import "partials/video";
 
 $smallNavHeight: 50px;
 
@@ -93,6 +93,10 @@ img {
   .nodeImage__photoCredit, .gigyaShareDirectApi, .slideOfTotal--outside {
     display: none;
   }
+
+  .videoPlayer {
+    width: 90vw;
+  }
   
   .slide {
     position: relative;
@@ -121,6 +125,11 @@ img {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    &.embeddedVideoAdded {
+      .slideOfTotal {
+        display: none;
+      }
+    }
     .slideOfTotal {
       position: absolute;
       left: 50%;

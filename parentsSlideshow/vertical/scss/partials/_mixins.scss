@@ -40,3 +40,66 @@
 
   @return unquote("\"") + $result + unquote("\"");
 }
+
+/// Video playButton
+@mixin playButton($size: 66px) {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  // circle
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: $size;
+    height: $size;
+    margin: -($size/2);
+    border: ($size/13.2) solid $gray;
+    @include border-radius($size);
+    @include background-image(linear-gradient($mediumGray, $black));
+    @include opacity(0.6);
+  }
+  // triangle
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include triangle($x-size: ($size/2.75), $y-size: ($size/4.4), $color: $lightGray);
+    margin: (($size/4.4)*-1) (($size/8.25)*-1);
+    @include opacity(0.8);
+  }
+}
+
+/// ---- [ CSS3 triangles using borders ] ---- */
+@mixin triangle($color: #fff, $size: 5px, $direction: right, $y-size: "", $x-size: "") {
+  @if $x-size != "" {
+  } @else {
+    $x-size: $size;
+  }
+  @if $y-size != "" {
+  } @else {
+    $y-size: $size;
+  }
+  width: 0;
+  height: 0;
+  display: inline-block;
+  content: "";
+  @if $direction == up {
+    border-left: #{$x-size} solid transparent;
+    border-right: #{$x-size} solid transparent;
+    border-bottom: #{$y-size} solid $color;
+  } @else if $direction == down {
+    border-left: #{$x-size} solid transparent;
+    border-right: #{$x-size} solid transparent;
+    border-top: #{$y-size} solid $color;
+  } @else if $direction == left {
+    border-top: #{$y-size} solid transparent;
+    border-bottom: #{$y-size} solid transparent;
+    border-right: #{$x-size} solid $color;
+  } @else {
+    border-top: #{$y-size} solid transparent;
+    border-bottom: #{$y-size} solid transparent;
+    border-left: #{$x-size} solid $color;
+  }
+}
