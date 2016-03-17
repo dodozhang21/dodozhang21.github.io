@@ -8,5 +8,10 @@ body.shell.parents #ramp-ovp-widget {
   height: 100%;
   &:before {
     @include spinner();
+    z-index: 1;
+  }
+  iframe {
+    position: relative;
+    z-index: 2;
   }
 }
