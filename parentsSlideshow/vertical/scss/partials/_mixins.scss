@@ -103,3 +103,24 @@
     border-left: #{$x-size} solid $color;
   }
 }
+
+@mixin spinner($diameter: 60px, $absoluteCenterIt: true, $color: $pink, $outlineWidth: 6px) {
+  display: block;
+  width: $diameter;
+  height: $diameter;
+  margin: 0 auto;
+  @include animation(spinnerRotation .6s infinite linear);
+  border-left: $outlineWidth solid rgba($color, .15);
+  border-right: $outlineWidth solid rgba($color, .15);
+  border-bottom: $outlineWidth solid rgba($color, .15);
+  border-top: $outlineWidth solid rgba($color, .8);
+  border-radius: 100%;
+
+  @if ($absoluteCenterIt) {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: #{(-$diameter/2)} 0 0 #{(-$diameter/2)};
+  }
+}

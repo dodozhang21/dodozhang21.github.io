@@ -44,7 +44,9 @@ function preloadSlide($slide) {
   if ($slide.length) {
     if ($slide.hasClass('slide--video')) {
       var $videoPlayer = $slide.find('.videoPlayer');
-      embedVideo($videoPlayer);
+      if (!$videoPlayer.find('iframe').length) {
+        embedVideo($videoPlayer);
+      }
     }
   }
 
