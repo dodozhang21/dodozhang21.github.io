@@ -1,11 +1,11 @@
 /* line 5, ../scss/videoOverrides.scss */
-body.shell.parents {
+body.shell.parents #ramp-ovp-widget {
   position: relative;
   width: 100%;
   height: 100%;
 }
 /* line 9, ../scss/videoOverrides.scss */
-body.shell.parents:before {
+body.shell.parents #ramp-ovp-widget:before {
   display: block;
   width: 60px;
   height: 60px;
