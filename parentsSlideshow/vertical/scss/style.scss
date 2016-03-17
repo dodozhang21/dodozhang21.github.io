@@ -1,0 +1,159 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+$blue: #00bad2;
+$darkBlue: #00a3b9;
+$lightGray: #d9d9d9;
+
+*,*:before,*:after {
+  @include box-sizing(border-box);
+}
+html {
+  overflow-y: hidden;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+html, body, .slideContainer {
+  height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slideContainer {
+  position: absolute;
+  top: 0;
+  @include transition(transform 0.5s cubic-bezier(.8,0,.2,1));
+  @include transform(translateY(0));
+  
+  .nodeImage__photoCredit, .gigyaShareDirectApi, .slideOfTotal--outside {
+    display: none;
+  }
+  
+  .slide {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 1rem;
+    background: white;
+  }
+  .slideImage {
+    text-align: center;
+  }
+  .slideImageInnerWrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    .slideOfTotal {
+      position: absolute;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      background: #fff;
+      margin-left: -35px;
+      bottom: -33px;
+      border-radius: 50%;
+      @include display-flex();
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+      .page {
+        margin-top: -35px;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .total {
+         font-weight: 700;
+      font-size: 9pt;
+      line-height: .7;
+      }
+    }
+  }
+}
+
+.slide:nth-of-type(odd) {
+  .monetate {
+    display: none;
+  }
+}
+
+.slideNavigation {
+  @include display-flex();
+  @include justify-content(space-between);
+  padding: 1rem;
+  .nextSlide, .previousSlide {
+    font-size: 0;
+    &:before {
+      font-family: 'FontAwesome';
+      font-size: 20px;
+      color: white;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: $blue;
+      border-radius: 50%;
+    }
+    &:hover:before {
+      opacity: 0.7;
+    }
+  }
+  .nextSlide {
+    &:before {
+      content: '\f063';
+    }
+  }
+  .previousSlide {
+    &:before {
+      content: '\f062';
+    }
+  }
+}
+.mobileAd {
+  > div {
+    margin: 0 auto;
+    display: block;
+    width: 320px;
+    height: 250px;
+    background: $lightGray;
+    &:before {
+      content: 'ad';
+    }
+  }
+}
+
+.slide:first-of-type {
+  .previousSlide {
+    opacity: 0;
+  }
+}
+
+.thirdParty {
+  padding: 1rem 0;
+  border-top: 1px solid $lightGray;
+  border-bottom: 1px solid $lightGray;
+}
+
+.videoTitle {
+  margin-top: 0;
+}
